@@ -1,12 +1,40 @@
-header{
-    padding: 2rem;
+.header{
+    padding: 2rem 4rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     &__list{
         display: flex;
+        font-weight: 500;
+        list-style-type:none;
     }
+
+    &__item{
+        transition: transform .1s;
+        &:not(last-child){
+            margin-right: 2rem;
+        }
+        &:hover{
+            transform: translateY(-.3rem);
+        }
+    }
+    &__link{
+        padding-bottom:.3rem;
+        transition: transform .1s;
+        &:link,
+        &:visited{
+            text-decoration: none;
+            color: var(--color-primary);
+        }
+        &:active,
+        &:hover{
+            color: var(--color-secondary);
+            border-bottom: 3px solid var(--color-secondary);
+        }
+    }
+    
+
 
 }
 .header-nav{

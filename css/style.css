@@ -1,3 +1,9 @@
+:root {
+  --color-primary: grey;
+  --color-secondary:#83b9c9;
+  --color-secondary-dark: #3469bf;
+  --color-secondary-light:#6d93d1; }
+
 *,
 *::after,
 *::before {
@@ -10,12 +16,43 @@ body {
   box-sizing: border-box; }
 
 body {
-  font-family: 'IBM Plex Sans Arabic', sans-serif; }
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300; }
 
-header {
-  padding: 3rem;
+.btn {
+  border: none;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  border-radius: 100px;
+  cursor: pointer; }
+
+.btn-lb {
+  color: var(--color-secondary-dark);
+  background-color: var(--color-secondary); }
+
+.header {
+  padding: 2rem 4rem;
   display: flex;
-  justify-content: space-around; }
-
-.header-nav {
-  display: flex; }
+  justify-content: space-between;
+  align-items: center; }
+  .header__list {
+    display: flex;
+    font-weight: 500;
+    list-style-type: none; }
+  .header__item {
+    transition: transform .1s; }
+    .header__item:not(last-child) {
+      margin-right: 2rem; }
+    .header__item:hover {
+      transform: translateY(-0.3rem); }
+  .header__link {
+    padding-bottom: .3rem;
+    transition: transform .1s; }
+    .header__link:link, .header__link:visited {
+      text-decoration: none;
+      color: var(--color-primary); }
+    .header__link:active, .header__link:hover {
+      color: var(--color-secondary);
+      border-bottom: 3px solid var(--color-secondary); }
