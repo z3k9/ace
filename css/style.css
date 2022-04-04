@@ -13,12 +13,17 @@
 
 body {
   font-size: 62.5%;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding-right: 4rem;
+  padding-left: 4rem; }
 
 body {
   font-family: 'IBM Plex Sans Arabic', sans-serif;
   font-size: 1.2rem;
   font-weight: 300; }
+
+.mt {
+  margin-top: 3rem; }
 
 .btn {
   border: none;
@@ -32,8 +37,12 @@ body {
   color: var(--color-secondary-dark);
   background-color: var(--color-secondary); }
 
+.btn-db {
+  background-color: var(--color-secondary-dark);
+  color: #fff; }
+
 .header {
-  padding: 2rem 4rem;
+  padding: 2rem 0;
   display: flex;
   justify-content: space-between;
   align-items: center; }
@@ -56,3 +65,20 @@ body {
     .header__link:active, .header__link:hover {
       color: var(--color-secondary);
       border-bottom: 3px solid var(--color-secondary); }
+
+.confirmation {
+  height: 80vh;
+  line-height: 2.5;
+  display: flex;
+  gap: 5rem; }
+  .confirmation__text {
+    flex: 0 0 50%;
+    align-self: center; }
+    .confirmation__text p {
+      color: var(--color-primary);
+      font-size: 0.9rem; }
+  .confirmation__header {
+    line-height: 0.5;
+    margin-bottom: 2rem; }
+  .confirmation__image {
+    border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%; }

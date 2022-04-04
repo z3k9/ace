@@ -1,5 +1,5 @@
 .header{
-    padding: 2rem 4rem;
+    padding: 2rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,7 +37,29 @@
 
 
 }
-.header-nav{
-    
+.confirmation{
+    height: 80vh;
+    line-height: 2.5;
+    display: flex;
+    gap: 5rem;
+
+
+    &__text{
+        flex: 0 0 50%;
+        align-self: center;
+        
+        p{
+        color: var(--color-primary);
+        font-size: 0.9rem;
+        }
+
+    }
+    &__header{
+        line-height: 0.5; 
+        margin-bottom: 2rem; 
+    }
+    &__image{
+        border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
+    }
 }
 
