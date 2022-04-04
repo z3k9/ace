@@ -82,3 +82,26 @@ body {
     margin-bottom: 2rem; }
   .confirmation__image {
     border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%; }
+
+.application {
+  padding: 3rem 0;
+  margin-top: 2rem; }
+  .application__header {
+    text-align: center; }
+  .application__list {
+    display: flex;
+    justify-content: space-around; }
+
+.process {
+  flex: 0 0 25%;
+  padding: .5rem;
+  margin-top: 2rem; }
+  .process__icon-box {
+    background-color: #fff;
+    width: 3.7rem;
+    height: 4rem;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2); }
+  .process p {
+    font-size: 0.8rem; }
