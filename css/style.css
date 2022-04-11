@@ -20,7 +20,14 @@ body {
 body {
   font-family: 'IBM Plex Sans Arabic', sans-serif;
   font-size: 1.2rem;
-  font-weight: 300; }
+  font-weight: 300;
+  color: var(--color-primary); }
+
+h2,
+h3,
+h4,
+h5 {
+  color: black; }
 
 .mt {
   margin-top: 3rem; }
@@ -97,11 +104,40 @@ body {
   padding: .5rem;
   margin-top: 2rem; }
   .process__icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #fff;
     width: 3.7rem;
     height: 4rem;
     border-radius: 20px;
     margin-bottom: 1rem;
-    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2); }
+    box-shadow: 0 0.5rem 0.8rem rgba(0, 0, 0, 0.2); }
+  .process__icon {
+    width: 2.8rem; }
   .process p {
+    color: var(--color-primary);
     font-size: 0.8rem; }
+
+.schedule {
+  margin-top: 5rem;
+  display: flex;
+  gap: 6rem;
+  flex-direction: row; }
+  .schedule__student {
+    flex: 0 0 30%; }
+  .schedule__text {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    margin-bottom: 2rem; }
+  .schedule__icon {
+    width: 3rem;
+    fill: pink; }
+  .schedule__features {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    column-gap: 3rem;
+    row-gap: 1rem; }
+  .schedule__feature-box {
+    width: 8rem; }
