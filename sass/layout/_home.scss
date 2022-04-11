@@ -4,6 +4,13 @@
     justify-content: space-between;
     align-items: center;
 
+    @media only screen and (max-width: $bp-medium) {
+        flex-direction: column;
+
+        &__btn{
+            margin-top: 2rem;
+        }
+    }
     &__list{
         display: flex;
         font-weight: 500;
@@ -43,11 +50,31 @@
     display: flex;
     gap: 5rem;
 
+    @media only screen and (max-width: $bp-large){
+        gap: 1rem;
+    }
+
+    @media only screen and (max-width: $bp-small){
+        flex-direction: column;
+    }
+
 
     &__text{
         flex: 0 0 50%;
         align-self: center;
         
+        @media only screen and (max-width:$bp-medium){
+            flex: 0 0 40%;
+        }
+        @media only screen and (max-width:$bp-small){
+            width: 90%;
+            text-align: center;
+
+            .btn{
+                width: 90%;
+            }
+        }
+
         p{
         color: var(--color-primary);
         font-size: 0.9rem;
@@ -56,28 +83,47 @@
     }
     &__header{
         line-height: 0.5; 
-        margin-bottom: 2rem; 
+        margin-bottom: 2rem;
+
+        @media only screen and (max-width: $bp-small){
+            margin-top: 3rem;
+            text-align: center;
+        }
     }
+
+
     &__image{
         border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
+        @media only screen and (max-width: $bp-small){
+            margin-top: 3rem;
+        }
     }
 }
 
 .application{
     padding: 3rem 0;
     margin-top: 2rem;
+    @media only screen and (max-width: $bp-small){
+        margin-top: 15rem;
+    }
     &__header{
         text-align: center;
     }
     &__list{
         display: flex;
         justify-content: space-around;
+
+        @media only screen and (max-width: $bp-small){
+            flex-direction: column;
+            text-align: center;
+        }
     }
 }
 .process{
     flex: 0 0 25%;
     padding: .5rem;
     margin-top: 2rem;
+
     &__icon-box{
         display: flex;
         align-items: center;
@@ -88,6 +134,11 @@
         border-radius: 20px;
         margin-bottom: 1rem;
         box-shadow: 0 .5rem .8rem rgba($color: #000000, $alpha: .2);
+
+        @media only screen and (max-width: $bp-small){
+            margin: auto;
+            margin-bottom: 2rem;
+        }
     }
 
     &__icon{
@@ -103,10 +154,16 @@
     margin-top: 5rem;
     display: flex;
     gap: 6rem;
-    flex-direction: row;
+
+    @media only screen and (max-width: $bp-small){
+        flex-direction: column;
+    }
 
     &__student{
         flex: 0 0 30%;
+        @media only screen and (max-width: $bp-small){
+            text-align: center;
+        }
     }
     &__text{
         margin-top: 1rem;
@@ -124,6 +181,12 @@
         grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
         column-gap: 3rem;
         row-gap: 1rem;
+
+        @media only screen and (max-width: $bp-small){
+            padding: 2rem;
+            text-align: center;
+            grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));    
+        }
     }
 
     &__feature-box{

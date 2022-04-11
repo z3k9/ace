@@ -16,6 +16,10 @@ body {
   box-sizing: border-box;
   padding-right: 4rem;
   padding-left: 4rem; }
+  @media only screen and (max-width: 59.375em) {
+    body {
+      padding-right: 2rem;
+      padding-left: 2rem; } }
 
 body {
   font-family: 'IBM Plex Sans Arabic', sans-serif;
@@ -53,6 +57,11 @@ h5 {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  @media only screen and (max-width: 53.75em) {
+    .header {
+      flex-direction: column; }
+      .header__btn {
+        margin-top: 2rem; } }
   .header__list {
     display: flex;
     font-weight: 500;
@@ -78,26 +87,55 @@ h5 {
   line-height: 2.5;
   display: flex;
   gap: 5rem; }
+  @media only screen and (max-width: 59.375em) {
+    .confirmation {
+      gap: 1rem; } }
+  @media only screen and (max-width: 47.5em) {
+    .confirmation {
+      flex-direction: column; } }
   .confirmation__text {
     flex: 0 0 50%;
     align-self: center; }
+    @media only screen and (max-width: 53.75em) {
+      .confirmation__text {
+        flex: 0 0 40%; } }
+    @media only screen and (max-width: 47.5em) {
+      .confirmation__text {
+        width: 90%;
+        text-align: center; }
+        .confirmation__text .btn {
+          width: 90%; } }
     .confirmation__text p {
       color: var(--color-primary);
       font-size: 0.9rem; }
   .confirmation__header {
     line-height: 0.5;
     margin-bottom: 2rem; }
+    @media only screen and (max-width: 47.5em) {
+      .confirmation__header {
+        margin-top: 3rem;
+        text-align: center; } }
   .confirmation__image {
     border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%; }
+    @media only screen and (max-width: 47.5em) {
+      .confirmation__image {
+        margin-top: 3rem; } }
 
 .application {
   padding: 3rem 0;
   margin-top: 2rem; }
+  @media only screen and (max-width: 47.5em) {
+    .application {
+      margin-top: 15rem; } }
   .application__header {
     text-align: center; }
   .application__list {
     display: flex;
     justify-content: space-around; }
+    @media only screen and (max-width: 47.5em) {
+      .application__list {
+        flex-direction: column;
+        text-align: center; } }
 
 .process {
   flex: 0 0 25%;
@@ -113,6 +151,10 @@ h5 {
     border-radius: 20px;
     margin-bottom: 1rem;
     box-shadow: 0 0.5rem 0.8rem rgba(0, 0, 0, 0.2); }
+    @media only screen and (max-width: 47.5em) {
+      .process__icon-box {
+        margin: auto;
+        margin-bottom: 2rem; } }
   .process__icon {
     width: 2.8rem; }
   .process p {
@@ -122,10 +164,15 @@ h5 {
 .schedule {
   margin-top: 5rem;
   display: flex;
-  gap: 6rem;
-  flex-direction: row; }
+  gap: 6rem; }
+  @media only screen and (max-width: 47.5em) {
+    .schedule {
+      flex-direction: column; } }
   .schedule__student {
     flex: 0 0 30%; }
+    @media only screen and (max-width: 47.5em) {
+      .schedule__student {
+        text-align: center; } }
   .schedule__text {
     margin-top: 1rem;
     font-size: 0.8rem;
@@ -139,5 +186,10 @@ h5 {
     grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
     column-gap: 3rem;
     row-gap: 1rem; }
+    @media only screen and (max-width: 47.5em) {
+      .schedule__features {
+        padding: 2rem;
+        text-align: center;
+        grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr)); } }
   .schedule__feature-box {
     width: 8rem; }
